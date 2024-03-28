@@ -46,7 +46,7 @@ class ConcreteObserverOne : public Observer {
 
 class ConcreteObserverTwo : public Observer {
  public:
-  void Update(Message* mesage) override {
+  void Update(Message* message) override {
     std::cout << "Update concrete observer two" << std::endl;    
   }
 };
