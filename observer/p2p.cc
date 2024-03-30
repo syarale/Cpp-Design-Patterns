@@ -2,20 +2,7 @@
 #include <string>
 #include <unordered_map>
 
-class UserService {
- public:
-  size_t Register(std::string telephone, std::string password) {
-    size_t user_id = std::hash<std::string>{}(telephone + password);
-    return user_id;
-  }
-};
-
-class PromotionService {
- public:
-  void IssueNewUserExperienceCash(size_t user_id) {
-    std::cout << "Issue New User Experience Cash to: " << user_id << std::endl;
-  }
-};
+#include "p2p_common.h"
 
 class UserController {
  public:
